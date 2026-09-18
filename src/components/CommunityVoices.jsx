@@ -50,15 +50,16 @@ export default function CommunityVoices({ onOpenBooking }) {
 
       {/* Featured Video Testimonial Card */}
       <div className="rounded-3xl border border-charcoal-300 bg-surface shadow-tactile-lg overflow-hidden p-6 sm:p-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          {/* Video Player Column */}
-          <div className="lg:col-span-7">
-            <div className="relative rounded-2xl bg-charcoal-950 overflow-hidden aspect-[16/10] sm:aspect-[16/9] shadow-tactile group flex items-center justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          {/* Video Player Column - 9:16 Vertical Reel */}
+          <div className="lg:col-span-5 flex justify-center">
+            <div className="relative w-full max-w-[340px] sm:max-w-[380px] rounded-3xl bg-charcoal-950 overflow-hidden aspect-[9/16] shadow-tactile group flex items-center justify-center border border-charcoal-800">
               {!hasError ? (
                 <video
                   ref={videoRef}
                   src={AUTHENTIC_TESTIMONIAL.videoSrc}
                   poster={AUTHENTIC_TESTIMONIAL.poster}
+                  preload="metadata"
                   playsInline
                   muted={isMuted}
                   onPlay={() => setIsPlaying(true)}
@@ -118,7 +119,7 @@ export default function CommunityVoices({ onOpenBooking }) {
           </div>
 
           {/* Context & Description Column */}
-          <div className="lg:col-span-5 space-y-5">
+          <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-900 font-mono text-xs font-bold">
               <CheckCircle2 className="w-3.5 h-3.5" />
               <span>CONFIRMED CLIENT PROJECT</span>
