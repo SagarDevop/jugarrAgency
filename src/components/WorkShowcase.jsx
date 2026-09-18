@@ -130,7 +130,7 @@ export default function WorkShowcase({ onOpenBooking }) {
                   <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-stretch">
                     {/* LEFT COLUMN: Media Preview, Before/After & Telemetry */}
                     <div className="w-full lg:w-5/12 flex flex-col justify-between space-y-4">
-                      <div className="relative aspect-[16/10] lg:aspect-[4/3] rounded-2xl bg-charcoal-100 overflow-hidden shadow-inner border border-charcoal-200">
+                      <div className="relative aspect-[16/10] lg:aspect-[4/3] rounded-2xl bg-charcoal-950 overflow-hidden shadow-inner border border-charcoal-800 flex items-center justify-center">
                         <img
                           src={
                             isBeforeActive && study.beforeImage
@@ -138,7 +138,7 @@ export default function WorkShowcase({ onOpenBooking }) {
                               : study.image
                           }
                           alt={study.title}
-                          className="w-full h-full object-cover transition-all duration-500"
+                          className="w-full h-full object-contain p-2 transition-all duration-500"
                         />
 
                         {/* Badge */}
@@ -298,12 +298,12 @@ export default function WorkShowcase({ onOpenBooking }) {
                   {/* Card Image Preview */}
                   <div
                     onClick={() => toggleExpand(study.id)}
-                    className="relative aspect-[16/10] bg-charcoal-100 overflow-hidden cursor-pointer group"
+                    className="relative aspect-[16/10] bg-charcoal-950 overflow-hidden cursor-pointer group flex items-center justify-center"
                   >
                     <img
                       src={study.image}
                       alt={study.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-contain p-2 group-hover:scale-102 transition-transform duration-500"
                       loading="lazy"
                     />
 

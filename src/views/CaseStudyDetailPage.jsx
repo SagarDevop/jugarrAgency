@@ -118,20 +118,20 @@ export default function CaseStudyDetailPage({ projectData }) {
               </div>
             </div>
 
-            <div className="aspect-[16/9] w-full bg-charcoal-900 overflow-hidden">
+            <div className="aspect-[16/10] sm:aspect-[16/9] w-full bg-charcoal-950 overflow-hidden flex items-center justify-center">
               <img
                 src={showBefore ? projectData.beforeImage : projectData.image}
                 alt={`${projectData.title} - ${showBefore ? 'Before' : 'After'}`}
-                className="w-full h-full object-cover object-top transition-all duration-300"
+                className="w-full h-full object-contain object-center p-2 sm:p-4 transition-all duration-300"
               />
             </div>
           </div>
         ) : (
-          <div className="aspect-[16/9] w-full bg-charcoal-900 overflow-hidden">
+          <div className="aspect-[16/10] sm:aspect-[16/9] w-full bg-charcoal-950 overflow-hidden flex items-center justify-center">
             <img
               src={projectData.image}
               alt={projectData.title}
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-contain object-center p-2 sm:p-4"
             />
           </div>
         )}

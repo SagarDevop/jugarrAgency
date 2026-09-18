@@ -189,11 +189,11 @@ export default function ServiceDetailPage({ serviceData }) {
               </div>
             </div>
 
-            <div className="lg:col-span-5 rounded-2xl overflow-hidden border border-charcoal-700 shadow-2xl aspect-[16/10]">
+            <div className="lg:col-span-5 rounded-2xl overflow-hidden border border-charcoal-700 shadow-2xl aspect-[16/10] bg-charcoal-950 flex items-center justify-center">
               <img
                 src={serviceData.caseStudy.image}
                 alt={serviceData.caseStudy.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain object-center p-2 sm:p-3"
               />
             </div>
           </div>

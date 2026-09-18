@@ -133,11 +133,11 @@ export default function ServicesPage({ onOpenBooking }) {
 
         {/* Editorial Visual: Real Bandamart Project Asset */}
         <div className="space-y-3 pt-4">
-          <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden bg-charcoal-950 border border-charcoal-800 shadow-tactile-lg aspect-[16/9] sm:aspect-[21/9]">
+          <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden bg-charcoal-950 border border-charcoal-800 shadow-tactile-lg aspect-[16/10] sm:aspect-[16/9] flex items-center justify-center">
             <img
               src="/assets/projects/bandamart/grocery_hero.png"
               alt="Bandamart E-Commerce Storefront Interface by Jugarr"
-              className="w-full h-full object-cover object-top opacity-95"
+              className="w-full h-full object-contain object-center p-2 sm:p-4 opacity-95"
             />
             <div className="absolute top-4 left-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-charcoal-950/80 backdrop-blur-md border border-charcoal-700 text-white font-mono text-[11px]">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
@@ -228,22 +228,22 @@ export default function ServicesPage({ onOpenBooking }) {
         {/* Editorial Visual: Real 4 Lotus Interior Renovation */}
         <div className="space-y-3 pt-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="relative rounded-2xl overflow-hidden bg-charcoal-950 border border-charcoal-800 shadow-tactile aspect-[16/10]">
+            <div className="relative rounded-2xl overflow-hidden bg-charcoal-950 border border-charcoal-800 shadow-tactile aspect-[16/10] flex items-center justify-center">
               <img
                 src="/assets/projects/4lotus/before.png"
                 alt="4 Lotus Interior Legacy Website Before Renovation"
-                className="w-full h-full object-cover object-top opacity-75 grayscale"
+                className="w-full h-full object-contain object-center p-2 sm:p-3 opacity-80 grayscale"
               />
               <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-charcoal-900/90 border border-charcoal-700 text-charcoal-400 font-mono text-[11px] font-bold">
                 BEFORE // CLUTTERED LEGACY SITE
               </div>
             </div>
 
-            <div className="relative rounded-2xl overflow-hidden bg-charcoal-950 border border-charcoal-700 shadow-tactile aspect-[16/10]">
+            <div className="relative rounded-2xl overflow-hidden bg-charcoal-950 border border-charcoal-700 shadow-tactile aspect-[16/10] flex items-center justify-center">
               <img
                 src="/assets/projects/4lotus/after.png"
                 alt="4 Lotus Interior Renovated Modern Website by Jugarr"
-                className="w-full h-full object-cover object-top opacity-95"
+                className="w-full h-full object-contain object-center p-2 sm:p-3 opacity-95"
               />
               <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-accent text-white font-mono text-[11px] font-bold shadow-tactile">
                 AFTER // EDITORIAL NEXT.JS 15
