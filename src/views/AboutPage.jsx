@@ -171,55 +171,77 @@ export default function AboutPage({ onOpenBooking }) {
         }}
       />
 
-      {/* Header Section */}
-      <div className="max-w-4xl space-y-4 mb-16">
-        <div className="inline-flex items-center gap-2 font-mono text-xs text-accent font-bold tracking-widest uppercase">
-          <span>[ ABOUT ME // FOUNDER & DEVELOPER ]</span>
+      {/* Header Section with Authentic Founder Photo */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center mb-16 pb-14 border-b border-charcoal-300">
+        {/* Profile Image Column */}
+        <div className="lg:col-span-4 flex justify-center lg:justify-start">
+          <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-3xl overflow-hidden bg-charcoal-950 border border-charcoal-400 shadow-tactile-lg group flex items-center justify-center">
+            <img
+              src={FOUNDER_INFO.photo}
+              alt="Sagar Singh Rajawat — Founder & Developer of Jugarr"
+              className="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-500"
+            />
+            {/* Overlay Status Pill */}
+            <div className="absolute bottom-3.5 left-3.5 right-3.5 p-2.5 rounded-xl bg-charcoal-950/85 backdrop-blur-md border border-charcoal-800 text-white font-mono text-xs flex items-center justify-between shadow-tactile">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span className="font-bold text-[11px] text-white">SAGAR S. RAJAWAT</span>
+              </div>
+              <span className="text-charcoal-400 text-[10px]">FOUNDER</span>
+            </div>
+          </div>
         </div>
 
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold font-display tracking-tight text-ink leading-[1.05]">
-          Hi, I'm Sagar — <br />
-          <span className="text-charcoal-400">founder and developer behind Jugarr.</span>
-        </h1>
+        {/* Bio Column */}
+        <div className="lg:col-span-8 space-y-4">
+          <div className="inline-flex items-center gap-2 font-mono text-xs text-accent font-bold tracking-widest uppercase">
+            <span>[ ABOUT ME // FOUNDER & DEVELOPER ]</span>
+          </div>
 
-        <p className="text-base sm:text-xl text-charcoal-700 font-normal leading-relaxed pt-2">
-          I design and build modern websites, e-commerce experiences, and custom web applications for businesses. I focus on combining practical functionality with thoughtful UI/UX to create digital products that are useful, clear, and built around real requirements.
-        </p>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-display tracking-tight text-ink leading-[1.08]">
+            Hi, I'm Sagar — <br />
+            <span className="text-charcoal-400">founder and developer behind Jugarr.</span>
+          </h1>
 
-        {/* Social Links & Handles */}
-        <div className="flex flex-wrap items-center gap-4 pt-4 font-mono text-xs">
-          <a
-            href={FOUNDER_INFO.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 rounded-full bg-surface border border-charcoal-300 text-ink hover:bg-ink hover:text-white transition-all flex items-center gap-2 shadow-sm"
-          >
-            <InstagramIcon className="w-4 h-4 text-pink-600" />
-            <span>Instagram</span>
-            <ExternalLink className="w-3 h-3 opacity-60" />
-          </a>
+          <p className="text-base sm:text-lg text-charcoal-700 font-normal leading-relaxed pt-2">
+            I design and build modern websites, e-commerce experiences, and custom web applications for businesses. I focus on combining practical functionality with thoughtful UI/UX to create digital products that are useful, clear, and built around real requirements.
+          </p>
 
-          <a
-            href={FOUNDER_INFO.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 rounded-full bg-surface border border-charcoal-300 text-ink hover:bg-ink hover:text-white transition-all flex items-center gap-2 shadow-sm"
-          >
-            <LinkedinIcon className="w-4 h-4 text-blue-600" />
-            <span>LinkedIn</span>
-            <ExternalLink className="w-3 h-3 opacity-60" />
-          </a>
+          {/* Social Links & Handles */}
+          <div className="flex flex-wrap items-center gap-3 pt-3 font-mono text-xs">
+            <a
+              href={FOUNDER_INFO.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-full bg-surface border border-charcoal-300 text-ink hover:bg-ink hover:text-white transition-all flex items-center gap-2 shadow-sm"
+            >
+              <InstagramIcon className="w-4 h-4 text-pink-600" />
+              <span>Instagram</span>
+              <ExternalLink className="w-3 h-3 opacity-60" />
+            </a>
 
-          <a
-            href={FOUNDER_INFO.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 rounded-full bg-surface border border-charcoal-300 text-ink hover:bg-ink hover:text-white transition-all flex items-center gap-2 shadow-sm"
-          >
-            <GithubIcon className="w-4 h-4" />
-            <span>GitHub</span>
-            <ExternalLink className="w-3 h-3 opacity-60" />
-          </a>
+            <a
+              href={FOUNDER_INFO.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-full bg-surface border border-charcoal-300 text-ink hover:bg-ink hover:text-white transition-all flex items-center gap-2 shadow-sm"
+            >
+              <LinkedinIcon className="w-4 h-4 text-blue-600" />
+              <span>LinkedIn</span>
+              <ExternalLink className="w-3 h-3 opacity-60" />
+            </a>
+
+            <a
+              href={FOUNDER_INFO.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-full bg-surface border border-charcoal-300 text-ink hover:bg-ink hover:text-white transition-all flex items-center gap-2 shadow-sm"
+            >
+              <GithubIcon className="w-4 h-4" />
+              <span>GitHub</span>
+              <ExternalLink className="w-3 h-3 opacity-60" />
+            </a>
+          </div>
         </div>
       </div>
 

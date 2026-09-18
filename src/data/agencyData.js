@@ -18,7 +18,7 @@ export const FOUNDER_INFO = {
   github: 'https://github.com/SagarDevop',
   linkedin: 'https://www.linkedin.com/in/sagardevop/',
   instagram: 'https://www.instagram.com/sgr_here/',
-  photo: '/assets/raw/sagarss.jpeg',
+  photo: '/assets/founder/profile.jpg',
   videos: [
     {
       id: 'intro',
