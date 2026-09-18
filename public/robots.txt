@@ -1,0 +1,7 @@
+# Robots.txt for JUGARR Agency (https://jugarr.in)
+User-agent: *
+Allow: /
+Disallow: /admin
+
+# Sitemaps
+Sitemap: https://jugarr.in/sitemap.xml
