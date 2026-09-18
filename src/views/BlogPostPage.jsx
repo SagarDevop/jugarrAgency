@@ -97,7 +97,7 @@ export default function BlogPostPage({ onOpenBooking, initialPost = null }) {
       <div className="flex items-center justify-between gap-4 mb-8">
         <div className="flex items-center gap-3">
           <img
-            src={post.authorAvatar || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80'}
+            src={post.authorAvatar || '/assets/founder/profile.jpg'}
             alt={post.author}
             className="w-11 h-11 rounded-full object-cover border border-charcoal-300"
           />
