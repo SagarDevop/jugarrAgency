@@ -1,7 +1,6 @@
 'use client';
 
-import React from 'react';
-import ModernServicesShowcase from './ModernServicesShowcase';
+import HomeServicesBento from './HomeServicesBento';
 import { ArrowUpRight } from 'lucide-react';
 
 export default function ServicesSection({ onOpenBooking }) {
@@ -20,8 +19,8 @@ export default function ServicesSection({ onOpenBooking }) {
         </p>
       </div>
 
-      {/* Modern Interactive Services Showcase & Bento Grid */}
-      <ModernServicesShowcase onOpenBooking={onOpenBooking} />
+      {/* Fancy Bento Grid for Home */}
+      <HomeServicesBento onOpenBooking={onOpenBooking} />
 
       {/* Practical Principle Banner */}
       <div className="mt-14 sm:mt-20 p-8 sm:p-12 rounded-3xl bg-ink text-white shadow-tactile-lg flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
